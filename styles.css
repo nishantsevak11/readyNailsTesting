@@ -1,0 +1,540 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sofadi+One&display=swap');
+
+:root{
+    --heading-color:#153a5b;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    width: 100%;
+}
+
+nav{
+    width: 60%;
+    height: 2.5em;
+    margin: auto;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 2.5em;
+}
+
+.navbar *{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+.features{
+    display: flex;
+}
+
+.features li{
+    margin: auto 2em;
+}
+
+#logo{
+    font-family: "Sofadi One", system-ui;
+    font-size: 30px;
+}
+
+@media (max-width:400px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .features{
+       margin: 5px;
+       padding: 5px;
+    }
+   
+}
+
+/* ! --------------------- Navbar End ----------------------- */
+
+.notice-banner{
+    background-color: #f36944;
+    width: 90%;
+    margin: auto;
+    height: 5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  25px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.notice-banner p{
+    color: white;
+    padding: 10px;
+}
+.notice-banner button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid blueviolet;
+    padding: 10px;
+}
+
+@media (max-width:400px){
+  
+    .notice-banner{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 50px auto;
+    }
+    .notice-banner p{
+        margin: 10px auto;
+    }
+}
+
+/* ! --------------------- Notice Banner End ----------------------- */
+
+header{
+    width: 100vw;
+
+}
+
+.hero-section {
+    
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    padding: 5%;
+  }
+  
+
+.hero-text{
+    width: 100%;
+    
+    left: 25%;
+    top: 10%;
+}
+.hero-text h1{
+    font-size: 2em;
+}
+.hero-text span{
+    font-size: 50px;
+    font-family: "Sofadi One", system-ui;
+    color: #fab005;
+}
+.hero-text p{
+    margin: 2%;
+}
+.hero-btn{
+    width: 100%;
+    height: 10vh;
+}
+.hero-design-btn{
+    width: 20%;
+    margin: 5%;
+    padding: 8px;
+   background-color: white;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   border: 3px solid black;
+}
+
+.hero-custom-btn{
+    width: 20%;
+    margin: 5%;
+    padding: 8px;
+   background-color: white;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   border: 3px solid black;
+}
+
+section{
+    width: 100%;
+}
+
+
+@media (max-width:400px){
+   
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-section .hero-text{
+    width: 100%;
+    font-size: .7em;
+  }
+  .hero-section .hero-text span{
+    font-size: 2em;
+  }
+  .hero-btn{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    margin-top: 10px;
+  }
+  .hero-design-btn{
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+  }
+  .hero-custom-btn{
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* @media (min-width: 400px) and (max-width: 650px){
+   
+}  */
+
+/* ! --------------------- hero-section End ----------------------- */
+
+/* ! ------------------- Try code -------------------- */   
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    padding: 20px;
+}
+.notice-banner {
+    background-color: #f36944;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.button-80 {
+    
+    color: rgb(3, 3, 3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.hero-text span {
+    color: #ff4081;
+}
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+.hero-btn button {
+    background-color: #ff4081;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.hero-btn button:hover {
+    background-color: #ff1744;
+}
+@media (min-width: 768px) {
+    .hero-section {
+    
+        padding: 40px;
+    }
+    .hero-text {
+        text-align: left;
+        max-width: 50%;
+    }
+    .hero-text h1 {
+        font-size: 3.5em;
+    }
+    .hero-btn {
+        text-align: left;
+    }
+} */
+
+/* ! ------------------- Try code -------------------- */
+
+ .slider-container{
+    width: 90%;
+    margin: auto;
+    height: 50vh;
+    background-color: #153a5b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* .section0{
+    position: absolute;
+    bottom: 0;
+    right:20% ;
+    width: 60%;
+    height: 500px;
+    margin: 20px auto;
+    background-image: url("./Images/NailBack.jpg");
+    background-size: contain;
+}
+
+
+ /* EVENTS SECTION */
+ 
+.section1{
+    width: 100%;
+    height: 60vh;
+    
+    position: relative;
+}
+
+
+
+/* .events-offers{
+   width: 80%;
+   height: 50vh;
+   background-image: url("./Images/NailBack.jpg");
+   background-size: cover;
+   margin: auto;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   
+}
+
+.events-offers p{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.event-text{
+    width: 60%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+    
+} */
+
+/* Categories Shop section */
+
+ .shop-section {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 2% 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+}
+
+#Shop-section-category-more-btn{
+    padding: 5px;
+    /* position: absolute;
+    top: -5;
+    right: 0; */
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%; 
+    padding: 10px;
+    position: relative;
+}
+
+.category {
+    max-width: 20%;
+    min-width: 30vw;
+    max-height: 60vh;
+    min-height: 20vh; 
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Trending Nails design */
+
+.trending-section {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 2% 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+}
+
+.trending-nails {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%; 
+    padding: 20px;
+}
+
+#trending-section-more-btn{
+    padding: 5px;
+    align-items: center;
+}
+
+.nail {
+    max-width: 25%;
+    min-width: 30vw;
+    max-height: 60vh;
+    min-height: 20vh; 
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.nail:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nail-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.footer-section{
+    background-color: #183153;
+    width: 100%;
+    height: 40vh;
+    color: white;
+    font-size: 40px;
+    padding: 15%;
+} 
+
+
+
+/* ! Redmi Note 13 Media Quaries */
+
+
+@media screen and (min-width: 400px) and (max-width: 1080px){
+    .navbar{
+        font-size: 1.5em;
+        justify-content: center;
+    }
+    #logo{
+        font-size: 2em;
+        margin-right:10px ;
+    }
+    .hero-text h1{
+        font-size: 2.5em;
+    }
+    .hero-text p{
+        font-size: 1.5em;
+    }
+    .hero-btn{
+        height: auto;
+    }
+    .slider-container{
+        height: 500px;
+    }
+    
+    .categories{
+        flex-wrap: nowrap;
+    }
+    .category{
+        height: 2vh;
+        margin: 5px
+    }
+    .trending-nails{
+        flex-wrap: nowrap;
+    }
+}

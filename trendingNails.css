@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+.trending-Nails div{
+    height: 40vh;
+    background-color: red;
+}
+.trending-Nails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid with flexible columns */
+    gap: 20px; /* Space between products */
+    padding: 20px;
+    
+  }
